@@ -1,0 +1,159 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+
+    background: #081b29;
+    color:#ededed;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 5%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: .6s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00abfe;
+}
+
+.home {
+    height: 100vh;
+    background: url('home3.svg') no-repeat;
+    background-size: 35%;
+    background-position: 95% center;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+}
+
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.1;
+
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.home-content p {
+    font-size: 15px;
+    margin: 20px 0 40px;
+    
+}
+
+.home-page {
+
+position: absolute;
+bottom: 40px;
+width: 170px;
+display: flex;
+justify-content: space-between;
+}
+
+.home-page a {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background:transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-page a:hover{
+    color: #081b29;
+    background: #00abf0;
+    transform: translateY(-5px);
+}
+
+
+.home-page a::before {
+ content: ''; 
+ position: absolute;
+ background: #00abf0;
+ top: 0;
+ left: 0;
+ width: 0;
+ height: 0;
+ z-index: -1;
+ transition: .5s;
+}
+
+.home-page a:hover::before {
+width: 100%;
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background: #00abf0;
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s, background 0.2s;
+  will-change: transform;
+  z-index: 1;
+}
+
+
+a {
+  transition: color 1s;
+}
+
+a:hover {
+  color: #00abf0;
+}
+
+  
+

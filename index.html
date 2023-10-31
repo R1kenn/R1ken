@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const cursor = document.querySelector(".custom-cursor");
+      
+          document.addEventListener("mousemove", (e) => {
+            const { clientX: x, clientY: y } = e;
+            cursor.style.left = x + "px";
+            cursor.style.top = y + "px";
+          });
+      
+          cursor.style.transition = "transform 25s ease"; 
+      
+          document.addEventListener("mouseover", (e) => {
+            cursor.style.transform = "scale(1)"; 
+          });
+      
+          document.addEventListener("mouseout", (e) => {
+            cursor.style.transform = "scale()"; 
+          });
+        });
+      </script>
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Mark.</a>
+        <nav class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+        </nav>
+       
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h1>Hi, I'm R1kenn</h1>
+            <h3>Machine Learning Developer</h3>
+
+       
+
+            <p>I am currently spearheading the development of a navigational chatbot project 
+                at St. Anne College Lucena Inc.
+                Additionally, I hold the prestigious position of Social Media Manager 
+                for the Junior Philippine Computer Society. 
+                My expertise extends to multiple programming languages, 
+                including C++, Java, Python, and Visual Basic</p>
+        </div>
+        <div class="custom-cursor"></div>
+      
+        
+        <div class = "home-page">
+            <a href="https://facebook.com/markvincent.madrid.5" target="_blank">
+                <i class='bx bxl-facebook'></i>
+            </a>
+           
+            <a href="https://www.instagram.com/shhkirt/" target="_blank">
+                <i class='bx bxl-instagram' ></i>
+            </a>
+           
+            <a href="https://youtube.com/@Shurikenfe3" target="_blank"> 
+                <i class='bx bxl-youtube'></i>
+            </a>
+
+        </div>
+        
+     
+       
+    </section>
+</body>
+</html>
+
